@@ -1,40 +1,40 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Hotel Website
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Features:
+1. Login.
+2. Register.
+3. View Hotels.
+4. Add Review to Hotel.
+5. Edit the  Review.
+6. Delete the Review.
+7. View all Reviews about a specific Hotel.
+8. View Rooms Provided by a Hotel and the Rooms Details.
+9. Ability to Edit a Room.
+10. Ability to Delete a Room.
+11. Authorization
 
-## About Laravel
+## Authorization Features: 
+Roles:  Each User has a " Role " , the default role is "user" who can see the "user dashboard".
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+A User can click the " Become a Partner" button to submit their partner application which will be reviewed by an admin.
+An admin can review Partner Applications and decide whether to refuse ( delete the application ) or accept the user as a partner.
+Once accepted a normal user will be upgraded to a partner account and will be able to use the partner dashboard.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Rooms:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Each hotel has many room choices with differences in max occupents , beds provided , views and prices.
 
-## Learning Laravel
+The ability for partners to  Add and  Edit Hotels has been Implemented and along with this the ability to Add a room to a Hotel.
+Partners can also Delete Rooms and Hotels aswell as Add and Delete Photos for each hotel.
+## Additional Hotel Booking Features
+1. Admin can view and remove partners.
+2. Users can Search Check In and Check Out dates which will be used to determain the avaialbility of each room on the website.
+3. Users can Pick a room and view their confirmation screen.
+4. Users can decide to go ahead with the booking and the reservation for that room on the specified dates will be made.
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+## Other Features 
+1. Advanced Search
+2. Reccomendations.
+3. View Your bookings.
+4. Only leave reviews for bookings made in the past 3 months. 
+5. Graphs for Partners to view.
